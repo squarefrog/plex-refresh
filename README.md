@@ -47,11 +47,15 @@ npm install forever -g
 ```
 Open `PlexRefreshStarter.app` in Automator, and edit the path to where you have cloned this repo, then save the file.
 
-![Automator](https://github.com/squarefrog/plex-refresh/raw/master/images/01-automator.png)
+<p align="center">
+  <img src="https://github.com/squarefrog/plex-refresh/raw/master/images/01-automator.png" alt="Automator" />
+</p>
 
-Now set the application to start on login. Open `System Preferences > Users & Groups > Login Items` and add it to the Login Items list. 
+Now set the application to start on login. Open `System Preferences > Users & Groups > Login Items` and add it to the Login Items list.
 
-![Login Item](https://github.com/squarefrog/plex-refresh/raw/master/images/02-login-item.png)
+<p align="center">
+  <img src="https://github.com/squarefrog/plex-refresh/raw/master/images/02-login-item.png" alt="Login Item" />
+</p>
 
 ### Setting up the web hook
 
