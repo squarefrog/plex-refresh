@@ -38,9 +38,20 @@ You can request section numbers directly from Plex Media Scanner using:
 path/to/Plex\ Media\ Scanner --list
 ```
 
-### Install the `launchd`
+### Starting on login
 
-In order to get the `plex-refresh` server to run continuously in the background in OS X, you need to use a [launch daemon](http://launchd.info/).
+The easiest way I could get this starting on login was to use [`forever`](https://github.com/foreverjs/forever) in conjuction with Automator.
+
+```bash
+npm install forever -g
+```
+Open `PlexRefreshStarter.app` in Automator, and edit the path to where you have cloned this repo, then save the file.
+
+![Automator](https://github.com/squarefrog/plex-refresh/raw/master/images/01-automator.png)
+
+Now set the application to start on login. Open `System Preferences > Users & Groups > Login Items` and add it to the Login Items list. 
+
+![Login Item](https://github.com/squarefrog/plex-refresh/raw/master/images/02-login-item.png)
 
 ### Setting up the web hook
 
