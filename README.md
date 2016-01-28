@@ -59,7 +59,17 @@ Now set the application to start on login. Open `System Preferences > Users & Gr
 
 ### Setting up the web hook
 
-To use the app simply send a `POST` request to either `/update_movies' or '/update_shows'.
+`plex-refresh` has three main endpoints:
+
+- `POST /update_movies` - will trigger a refresh of your `Movies` section
+- `POST /update_shows` - will trigger a refresh of your `TV Shows` section
+- `GET /` - will tell you the last time each section was refreshed by the application
+
+In your media organiser of choice, simply add a new web hook with the relevant endpoint. For example, in Sonarr, I use the following to refresh `TV Shows` when a file has been processed:
+
+<p align="center">
+  <img src="https://github.com/squarefrog/plex-refresh/raw/master/images/03-sonarr.png" alt="Sonarr Web Hook" />
+</p>
 
 ### Suggestions?
 
