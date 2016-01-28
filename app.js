@@ -20,9 +20,9 @@ function refreshSection(section_name) {
   var args = '--scan --refresh'
 
   if (section_name === 'movies') {
-    args = args + ' --section 1';
+    args = args + ' --section ' + movie_section;
     last_scanned_movies = date
-  } else if (section_name === 'shows') {
+  } else if (section_name === 'shows' + tv_section) {
     args = args + ' --section 2';
     last_scanned_movies = shows
   }
